@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <header class="w-[100%] h-[80vh] bg-cover bg-center relative">
+
+
+    <nav class="w-full h-10  flex justify-between items-center lg:px-15 px-2 z-500 relative">
+      <div><img src="/images/logo.png" alt="" class="h-6"></div>
+      <ul class="flex text-gray-300 gap-3 items-center lg:gap-10">
+        <li class="menu lg:hidden"><i class="fa-solid fa-bars hover:text-white cursor-pointer"></i></li>
+        <div class="lg:flex lg:gap-10 lg:items-center hidden">
+
+          <li><a href="#home" class="hover:text-white">Home</a></li>
+          <li><a href="#movies" class="hover:text-white">Movies</a></li>
+          <li><a href="#series" class="hover:text-white">Series</a></li>
+          <li><a href="#category" class="hover:text-white">Category</a></li>
+        </div>
+        <input type="text" class="searchbox  bg-transparent  rounded-full  " placeholder="search movies">
+
+        <li><i class="fa-solid fa-magnifying-glass cursor-pointer hover:text-white searchbtn"></i></li>
+        <li><i class="fa-solid fa-bell hover:text-white "></i></li>
+        <li><img src="/images/user.png" alt="" class="h-7"> </li>
+      </ul>
+
+
+    </nav>
+    <div class="border-b-1 border-gray-500 "></div>
+    <div class=" text-white menubox  rounded-xl pl-1  overflow-hidden  absolute w-[100%]">
+      <li class="pb-2 "><a href="#home" class="hover:font-bold">Home</a></li>
+      <li class="pb-2"><a href="#home" class="hover:font-bold">Movies</a></li>
+      <li class="pb-2"><a href="#home" class="hover:font-bold">Series</a></li>
+      <li class="pb-2"><a href="#home" class="hover:font-bold">Category</a></li>
+    </div>
+    <div class="absolute w-[40%] left-[10%] mt-10">
+      <h2 class="font-extrabold text-white mb-3 duration"></h2>
+      <h2 class="font-extrabold text-white mb-3 genre">
+        <h1 class="font-extrabold text-5xl text-white mb-8 title"></h1>
+        <p class="text-white font-bold hidden md:block description"></p>
+        <div class="mt-5 ">
+          <button
+            class="bg-red-500 rounded-full py-1.5 px-4 text-white text-[0.7rem] cursor-pointer hover:scale-110 hover:bg-amber-800 "><i
+              class="fa-solid fa-play pr-1 "></i>WATCH</button>
+          <button
+            class="bg-black text-white rounded-full py-1.5 px-4 text-[0.7rem] hover:scale-110 hover:bg-amber-950 cursor-pointer ">+
+            ADD LIST</button>
+        </div>
+    </div>
+
+    <div class=" dots flex gap-1 justify-center items-end h-[90%] mb-50 ">
+      <div class="w-10 h-1 dot "></div>
+      <div class="w-10 h-1  dot "></div>
+      <div class="w-10 h-1  dot "></div>
+
+
+
+    </div>
+  </header>
+  <main>
+    <div
+      class="secondnav flex mx-10 gap-2 flex-col sm:flex-row sm:flex sm:justify-around text-gray-400 sm:mx-0  sm:mt-5 ">
+      <button class="bg-black rounded-full px-1 ">
+        <div class="cursor-pointer hover:text-white"><i class="fa-solid fa-angle-up mr-0.5 "></i>Trends Now</div>
+      </button>
+      <button class="bg-black rounded-full px-1.5">
+        <div class="cursor-pointer hover:text-white"><i class="fa-solid fa-fire mr-0.5 "></i>Popular</div>
+      </button>
+      <button class="bg-black rounded-full px-1.5">
+        <div class="cursor-pointer hover:text-white"><i class="fa-solid fa-star mr-0.5 "></i>Preference</div>
+      </button>
+      <button class="bg-black rounded-full px-1.5">
+        <div class="cursor-pointer hover:text-white"><i class="fa-solid fa-plus mr-0.5 "></i>Recently Added</div>
+      </button>
+    </div>
+    <div class="bg-gray-900 h-0.5 mt-4 ml-18 mr-18"></div>
+  </main>
+
+
+
+
+
+
+
+
+
+  <div class="swiper mySwiper mt-3 ">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><button class="myswiperbutton">Action</button></div>
+      <div class="swiper-slide"><button class="myswiperbutton">Crime</button></div>
+      <div class="swiper-slide"><button class="myswiperbutton">Adventure</button></div>
+
+      <div class="swiper-slide"><button class="myswiperbutton">Biography</button></div>
+      <div class="swiper-slide"><button class="myswiperbutton">Animation</button></div>
+      <div class="swiper-slide"><button class="myswiperbutton">Comedy</button></div>
+      <div class="swiper-slide"><button class="myswiperbutton">Documentary</button></div>
+      <div class="swiper-slide"><button class="myswiperbutton">Dramas</button></div>
+      <div class="swiper-slide"><button class="myswiperbutton">Webseries</button></div>
+      <div class="swiper-slide"><button class="myswiperbutton"> 18+</button></div>
+      <div class="swiper-slide"><button class="myswiperbutton">SciFi</button></div>
+
+      <div class="swiper-slide"><button class="myswiperbutton">Horror</button></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <div class="swiper mySwiper2 mt-3 ">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="moviecontainer">
+          <img src="/movies/bagi.jpg" alt="">
+          <div class="text-white ">Venom 2</div>
+
+          <div class="flex justify-between year">
+            <div class="text-gray-500">2020</div>
+            <div>
+              <span class="text-gray-500 "><i class="fa-solid fa-heart"></i></span>
+              <span class="text-gray-500"><i class="fa-solid fa-eye"></i></span>
+              <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i> </span>
+              <span class="rating">9.6</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="swiper-slide">
+        <div class="moviecontainer">
+          <img src="/movies/6under.jpg" alt="">
+          <div class="text-white">Venom</div>
+          <div class="flex justify-between year">
+            <div class="text-gray-500">2020</div>
+            <div>
+              <span class="text-gray-500 "><i class="fa-solid fa-heart"></i></span>
+              <span class="text-gray-500"><i class="fa-solid fa-eye"></i></span>
+              <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i> </span>
+              <span class="rating">9.6</span>
+
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+
+
+
+      <div class="swiper-slide">
+        <div class="moviecontainer">
+          <img src="/movies/a perfact.jpg" alt="">
+          <div class="text-white">Venom</div>
+          <div class="flex justify-between year">
+            <div class="text-gray-500">2020</div>
+            <div>
+              <span class="text-gray-500 "><i class="fa-solid fa-heart"></i></span>
+              <span class="text-gray-500"><i class="fa-solid fa-eye"></i></span>
+              <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i> </span>
+              <span class="rating">9.6</span>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-slide">
+        <div class="moviecontainer">
+
+          <img src="/movies/abcd.jpg" alt="">
+          <div class="text-white">Venom</div>
+          <div class="flex justify-between year">
+            <div class="text-gray-500">2020</div>
+            <div>
+              <span class="text-gray-500 "><i class="fa-solid fa-heart"></i></span>
+              <span class="text-gray-500"><i class="fa-solid fa-eye"></i></span>
+              <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i> </span>
+              <span class="rating">9.6</span>
+
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+      </div>
+      <div class="swiper-slide">
+        <div class="moviecontainer">
+          <img src="/movies/acceleration.jpg" alt="">
+          <div class="text-white">Venom</div>
+          <div class="flex justify-between year">
+            <div class="text-gray-500">2020</div>
+            <div>
+              <span class="text-gray-500 "><i class="fa-solid fa-heart"></i></span>
+              <span class="text-gray-500"><i class="fa-solid fa-eye"></i></span>
+              <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i> </span>
+              <span class="rating">9.6</span>
+
+            </div>
+
+          </div>
+
+
+
+
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="moviecontainer">
+          <img src="/movies/air.jpg" alt="">
+          <div class="text-white">Venom</div>
+          <div class="flex justify-between year">
+            <div class="text-gray-500">2020</div>
+            <div>
+              <span class="text-gray-500 "><i class="fa-solid fa-heart"></i></span>
+              <span class="text-gray-500"><i class="fa-solid fa-eye"></i></span>
+              <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i> </span>
+              <span class="rating">9.6</span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+      <div class="swiper-slide">
+        <div class="moviecontainer">
+          <img src="/movies/allahdin.jpg" alt="">
+          <div class="text-white">Venom</div>
+          <div class="flex justify-between year">
+            <div class="text-gray-500">2020</div>
+            <div>
+              <span class="text-gray-500 "><i class="fa-solid fa-heart"></i></span>
+              <span class="text-gray-500"><i class="fa-solid fa-eye"></i></span>
+              <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i> </span>
+              <span class="rating">9.6</span>
+
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="moviecontainer">
+          <img src="/movies/bfg.webp" alt="">
+          <div class="text-white">Venom</div>
+          <div class="flex justify-between year">
+            <div class="text-gray-500">2020</div>
+            <div>
+              <span class="text-gray-500 "><i class="fa-solid fa-heart"></i></span>
+              <span class="text-gray-500"><i class="fa-solid fa-eye"></i></span>
+              <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i> </span>
+              <span class="rating">9.6</span>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="moviecontainer">
+          <img src="/movies/chalmeraputt3.webp" alt="">
+          <div class="text-white">Venom</div>
+          <div class="flex justify-between year">
+            <div class="text-gray-500">2020</div>
+            <div>
+              <span class="text-gray-500 "><i class="fa-solid fa-heart"></i></span>
+              <span class="text-gray-500"><i class="fa-solid fa-eye"></i></span>
+              <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i> </span>
+              <span class="rating">9.6</span>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="moviecontainer">
+        <img src="/movies/bad boys.jpg" alt="">
+        <div class="text-white">Venom</div>
+        <div class="flex justify-between year">
+          <div class="text-gray-500">2020</div>
+          <div>
+            <span class="text-gray-500 "><i class="fa-solid fa-heart"></i></span>
+            <span class="text-gray-500"><i class="fa-solid fa-eye"></i></span>
+            <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i> </span>
+            <span class="rating">9.6</span>
+
+          </div>
+
+        </div>
+      </div>
+      </div>
+
+
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+  <script src="hello.js"></script>
+</body>
+
+</html>
