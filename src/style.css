@@ -81,6 +81,15 @@ li{
 
     margin-left: 5px;
     height: 350px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+
+    
+}
+.mySwiper2 .swiper-slide:hover{
+    transform:scale(1.1)
+
+   
 }
 .mySwiper2 .moviecontainer{
     height: 80%;
