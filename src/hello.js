@@ -164,6 +164,14 @@ genrebuttons.forEach(button => {
     
 });
 
+volumeicon=document.querySelector('.volume')
+volumerange=document.querySelector('.volumerange')
+volumeicon.addEventListener('click',()=>{
+    volumerange.classList.toggle('visible')
+   
+    
+})
+
 
 
 

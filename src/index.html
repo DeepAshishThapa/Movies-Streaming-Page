@@ -315,18 +315,22 @@
     <div class="swiper-button-prev"></div>
   </div>
   <div class="vidbox w-[100vw] relative flex items-center justify-center">
-    <video src="" class="bg-black rounded-3xl w-[90%] m-auto border-2 border-amber-50 "></video>
+    <video src="30.mp4" class="bg-black rounded-3xl w-[90%] m-auto border-2 border-amber-50 " autoplay></video>
     <div class="bg-gray-800 w-[80%] absolute bottom-4  rounded-full h-[35px] control flex items-center justify-around ">
       <div class="playretry flex gap-1.5 md:gap-4 ">
         <i class="fa-solid fa-play " style="color: #ffffff;"></i>
         <i class="fa-solid fa-clock-rotate-left" style="color: #ffffff;"></i>
       </div>
 
-      <div class="bar  h-1 w-[40%] md:w-[60%] bg-gray-500 rounded-full "></div>
-      <div class="othericons flex gap-1.5 md:gap-3 ">
+      <div class="bar  h-1 w-[40%] md:w-[60%] bg-gray-500 rounded-full relative">
+        <div class="bg-white w-2 h-2 rounded-full absolute"></div>
+      </div>
+      <div class="othericons flex gap-1.5 md:gap-3 items-center">
         <i class="fa-solid fa-closed-captioning" style="color: #fcfcfd;"></i>
-        <i class="fa-solid fa-volume-high" style="color: #fafcff;"></i>
+        <i class="fa-solid fa-volume-high volume cursor-pointer text-white "></i>
+        <input type="range" class="sm:w-[90px] w-[50px] h-[3px] hidden volumerange ">
         <i class="fa-solid fa-expand "style="color: #fcfcfd;"></i>
+
 
       </div>
 

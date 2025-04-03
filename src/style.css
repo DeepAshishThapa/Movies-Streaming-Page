@@ -117,8 +117,13 @@ li{
 .red{
     background-color: red;
 }
+.volume:hover{
+    color: gray ;
+}
 
-
+.visible{
+    display: block;
+}
 
 
 
