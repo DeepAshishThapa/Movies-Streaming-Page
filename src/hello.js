@@ -164,14 +164,39 @@ genrebuttons.forEach(button => {
     
 });
 
-volumeicon=document.querySelector('.volume')
-volumerange=document.querySelector('.volumerange')
-volumeicon.addEventListener('click',()=>{
-    volumerange.classList.toggle('visible')
+// volumeicon=document.querySelector('.volume')
+// volumerange=document.querySelector('.volumerange')
+// volumeicon.addEventListener('click',()=>{
+//     volumerange.classList.toggle('visible')
    
     
-})
+// })
 
+vid1=document.querySelector('.vid1')
+vid2=document.querySelector('.vid2')
+vid3=document.querySelector('.vid3')
+video=document.querySelector('#video')
+console.log(vid1)
+
+
+vid1.addEventListener('click',()=>{
+    video.src='/src/john wick.webm'
+    video.load(); 
+    video.play();
+})
+vid2.addEventListener('click',()=>{
+    video.src='/src/jurasic world.webm'
+    video.load(); 
+    video.play();
+    console.log("nonono")
+
+
+})
+vid3.addEventListener('click',()=>{
+    video.src='/src/theboys.webm'
+    video.load(); 
+    video.play();
+})
 
 
 
