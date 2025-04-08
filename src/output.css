@@ -236,17 +236,38 @@
   .bottom-\[25\%\] {
     bottom: 25%;
   }
-  .bottom-\[50\%\] {
-    bottom: 50%;
+  .bottom-\[70\%\] {
+    bottom: 70%;
   }
-  .bottom-\[75\%\] {
-    bottom: 75%;
+  .bottom-\[70\] {
+    bottom: 70;
+  }
+  .left-\[2\] {
+    left: 2;
   }
   .left-\[10\%\] {
     left: 10%;
   }
   .left-\[11\%\] {
     left: 11%;
+  }
+  .left-\[22\%\] {
+    left: 22%;
+  }
+  .left-\[30\%\] {
+    left: 30%;
+  }
+  .left-\[33\%\] {
+    left: 33%;
+  }
+  .left-\[35\%\] {
+    left: 35%;
+  }
+  .left-\[55\%\] {
+    left: 55%;
+  }
+  .left-\[60\%\] {
+    left: 60%;
   }
   .isolate {
     isolation: isolate;
@@ -380,6 +401,9 @@
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
+  .mr-0 {
+    margin-right: calc(var(--spacing) * 0);
+  }
   .mr-0\.5 {
     margin-right: calc(var(--spacing) * 0.5);
   }
@@ -485,6 +509,9 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
+  .h-0 {
+    height: calc(var(--spacing) * 0);
+  }
   .h-0\.5 {
     height: calc(var(--spacing) * 0.5);
   }
@@ -517,6 +544,9 @@
   }
   .min-h-screen {
     min-height: 100vh;
+  }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
@@ -1385,6 +1415,9 @@
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
+  .py-1 {
+    padding-block: calc(var(--spacing) * 1);
+  }
   .py-1\.5 {
     padding-block: calc(var(--spacing) * 1.5);
   }
@@ -2031,6 +2064,36 @@
       @media (hover: hover) {
         color: var(--color-white);
       }
+    }
+  }
+  .sm\:bottom-\[25\%\] {
+    @media (width >= 40rem) {
+      bottom: 25%;
+    }
+  }
+  .sm\:bottom-\[45\%\] {
+    @media (width >= 40rem) {
+      bottom: 45%;
+    }
+  }
+  .sm\:bottom-\[50\%\] {
+    @media (width >= 40rem) {
+      bottom: 50%;
+    }
+  }
+  .sm\:bottom-\[60\%\] {
+    @media (width >= 40rem) {
+      bottom: 60%;
+    }
+  }
+  .sm\:bottom-\[75\%\] {
+    @media (width >= 40rem) {
+      bottom: 75%;
+    }
+  }
+  .sm\:left-\[11\%\] {
+    @media (width >= 40rem) {
+      left: 11%;
     }
   }
   .sm\:mx-0 {
