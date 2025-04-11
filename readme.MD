@@ -10,5 +10,5 @@
             <li>🎞️ Interactive Swiper carousel</li>
             <li>🧠 Movie data dynamically fetched and displayed</li>
             <li>🔍 Filter movies by genre</li>
-            <li>🌙 Dark-themed aesthetics</li>
+            <li>🌙 Dark-themed aesthetics modern design</li>
         </ul>
