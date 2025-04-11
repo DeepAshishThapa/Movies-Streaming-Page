@@ -233,17 +233,8 @@
   .sticky {
     position: sticky;
   }
-  .bottom-\[25\%\] {
-    bottom: 25%;
-  }
   .bottom-\[70\%\] {
     bottom: 70%;
-  }
-  .bottom-\[70\] {
-    bottom: 70;
-  }
-  .left-\[2\] {
-    left: 2;
   }
   .left-\[10\%\] {
     left: 10%;
@@ -251,20 +242,8 @@
   .left-\[11\%\] {
     left: 11%;
   }
-  .left-\[22\%\] {
-    left: 22%;
-  }
-  .left-\[30\%\] {
-    left: 30%;
-  }
-  .left-\[33\%\] {
-    left: 33%;
-  }
   .left-\[35\%\] {
     left: 35%;
-  }
-  .left-\[55\%\] {
-    left: 55%;
   }
   .left-\[60\%\] {
     left: 60%;
@@ -964,6 +943,9 @@
   .justify-items-stretch {
     justify-items: stretch;
   }
+  .gap-0 {
+    gap: calc(var(--spacing) * 0);
+  }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
   }
@@ -972,6 +954,9 @@
   }
   .gap-3 {
     gap: calc(var(--spacing) * 3);
+  }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
   }
   .space-y-reverse {
     :where(& > :not(:last-child)) {
@@ -1057,6 +1042,9 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+  }
+  .overflow-auto {
+    overflow: auto;
   }
   .overflow-hidden {
     overflow: hidden;
@@ -1421,6 +1409,12 @@
   .py-1\.5 {
     padding-block: calc(var(--spacing) * 1.5);
   }
+  .pt-5 {
+    padding-top: calc(var(--spacing) * 5);
+  }
+  .pt-10 {
+    padding-top: calc(var(--spacing) * 10);
+  }
   .pr-1 {
     padding-right: calc(var(--spacing) * 1);
   }
@@ -1569,9 +1563,6 @@
   }
   .text-gray-400 {
     color: var(--color-gray-400);
-  }
-  .text-gray-500 {
-    color: var(--color-gray-500);
   }
   .text-white {
     color: var(--color-white);
@@ -2071,19 +2062,9 @@
       bottom: 25%;
     }
   }
-  .sm\:bottom-\[45\%\] {
-    @media (width >= 40rem) {
-      bottom: 45%;
-    }
-  }
   .sm\:bottom-\[50\%\] {
     @media (width >= 40rem) {
       bottom: 50%;
-    }
-  }
-  .sm\:bottom-\[60\%\] {
-    @media (width >= 40rem) {
-      bottom: 60%;
     }
   }
   .sm\:bottom-\[75\%\] {

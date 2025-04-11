@@ -30,7 +30,7 @@ const slideimage = () => {
     genre = header.querySelector('.genre')
     title = header.querySelector('.title')
     description = header.querySelector('.description')
-    alldot=document.querySelectorAll('.dot')
+    alldot = document.querySelectorAll('.dot')
 
     header.style.background = `url('${images[index]}') no-repeat center`;
     header.style.backgroundSize = "cover";
@@ -48,8 +48,8 @@ const slideimage = () => {
          Using Pym’s shrinking technology.
         
         `
-        alldot[1].style.backgroundColor="white"
-        alldot[0].style.backgroundColor="rgba(156, 156, 150, 0.5)"
+        alldot[1].style.backgroundColor = "white"
+        alldot[0].style.backgroundColor = "rgba(156, 156, 150, 0.5)"
 
 
 
@@ -68,8 +68,8 @@ const slideimage = () => {
         Pirates of the Caribbean: Dead Men Tell No Tales (2017) is the fifth installment in the Pirates of the Caribbean series. It follows Captain Jack Sparrow, who is hunted by the ghostly Captain Salazar and 
         his crew, who have escaped from the Devil’s Triangle. 
         `
-        alldot[2].style.backgroundColor="white"
-        alldot[1].style.backgroundColor="rgba(156, 156, 150, 0.5)"
+        alldot[2].style.backgroundColor = "white"
+        alldot[1].style.backgroundColor = "rgba(156, 156, 150, 0.5)"
     }
     else {
         duration.innerHTML = `<h2>Duration:1h 47min`
@@ -86,8 +86,8 @@ const slideimage = () => {
         deep bond with a rare albino gorilla named George. When a rogue genetic experiment mutates George and two other
         animals into monstrous creatures.
         `
-        alldot[0].style.backgroundColor="white"
-        alldot[2].style.backgroundColor="rgba(156, 156, 150, 0.5)"
+        alldot[0].style.backgroundColor = "white"
+        alldot[2].style.backgroundColor = "rgba(156, 156, 150, 0.5)"
     }
     index = (index + 1) % images.length;
 
@@ -101,100 +101,74 @@ setInterval(slideimage, 3500)
 
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 4,
-    
+
     spaceBetween: 10,
-    breakpoints:{
-        980:{
-            slidesPerView:8
+    breakpoints: {
+        980: {
+            slidesPerView: 8
         },
-        1460:{
-            slidesPerView:10    
+        1460: {
+            slidesPerView: 10
         },
 
     },
-   
+
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
-      },
-  });
-var swiper = new Swiper(".mySwiper2", {
-    slidesPerView: 3,
-    
-    spaceBetween: 15,
-    breakpoints:{
-        550:{
-            slidesPerView:4
-        },
-        650:{
-            slidesPerView:5
-        },
-        1000:{
-            slidesPerView:6
-        },
-        1200:{
-            slidesPerView:9
-        }
-
-
     },
-    loop:true,
-   
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-  });
+});
 
- 
+
+
 
 //     genrebuttons=document.querySelectorAll('.mySwiper button');
 //   genrebuttons.forEach(button => {
-    
+
 //     button.style.backgroundColor=""
-    
+
 //   });
-    
-genrebuttons=document.querySelectorAll('.mySwiper button')
+
+genrebuttons = document.querySelectorAll('.mySwiper button')
 genrebuttons.forEach(button => {
-    button.addEventListener('click',()=>{
+    button.addEventListener('click', () => {
         console.log(button)
         button.classList.toggle('red');
     })
-    
+
 });
 
 // volumeicon=document.querySelector('.volume')
 // volumerange=document.querySelector('.volumerange')
 // volumeicon.addEventListener('click',()=>{
 //     volumerange.classList.toggle('visible')
-   
-    
+
+
 // })
 
-vid1=document.querySelector('.vid1')
-vid2=document.querySelector('.vid2')
-vid3=document.querySelector('.vid3')
-video=document.querySelector('#video')
+vid1 = document.querySelector('.vid1')
+vid2 = document.querySelector('.vid2')
+vid3 = document.querySelector('.vid3')
+video = document.querySelector('#video')
 console.log(vid1)
 
 
-vid1.addEventListener('click',()=>{
-    video.src='/src/john wick.webm'
-    video.load(); 
+vid1.addEventListener('click', () => {
+    video.src = '/src/john wick.webm'
+    video.load();
     video.play();
 })
-vid2.addEventListener('click',()=>{
-    video.src='/src/jurasic world.webm'
-    video.load(); 
+vid2.addEventListener('click', () => {
+    video.src = '/src/jurasic world.webm'
+    video.load();
     video.play();
     console.log("nonono")
 
 
 })
-vid3.addEventListener('click',()=>{
-    video.src='/src/theboys.webm'
-    video.load(); 
+vid3.addEventListener('click', () => {
+    video.src = '/src/theboys.webm'
+    video.load();
     video.play();
 })
 
