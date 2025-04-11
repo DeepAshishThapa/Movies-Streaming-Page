@@ -103,6 +103,8 @@ li{
 
 .container .card{
     min-width: 160px;
+    /* min-width: 11% */
+    
 
 
 }
@@ -116,6 +118,7 @@ li{
 .container .card img:hover{
     transform: scale(1.1);
 }
-.container::-webkit-scrollbar{
+/* .container::-webkit-scrollbar{
     display: none;
-}
+} */
+

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="./output.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -113,7 +113,15 @@
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
   </div>
-   <div class="container pt-5 px-1 flex gap-5 overflow-auto ">
+  <div class="container pt-5 px-1 flex gap-5 overflow-auto relative w-[99vw] ">
+    <div class="absolute left-3 top-[40%] z-10 ">
+      <button class="text-white "><i class="fa-solid fa-angle-left text-3xl"></i></button>
+
+    </div>
+    <div class="absolute">
+      <button class="text-white "><i class="fa-solid fa-angle-right text-3xl"></i></button>
+
+    </div>
     <div class="card">
       <img src="/movies/6under.jpg" alt="">
     </div>
@@ -151,7 +159,7 @@
       <img src="/movies/bfg.webp" alt="">
     </div>
 
-   </div>
+  </div>
   <div class="vidbox w-[99vw] relative">
     <video src="/src/john wick.webm " class="bg-black rounded-3xl w-[80%] m-auto border-2 border-amber-50 " id="video"
       controls muted>
