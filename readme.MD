@@ -1,4 +1,3 @@
- <div style="font-family: Arial, sans-serif; padding: 20px; line-height: 1.6;">
 
         <h1 style="color: #333;">🎬 Movie Streaming Landing Page</h1>
 
