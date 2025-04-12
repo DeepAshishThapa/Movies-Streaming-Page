@@ -1,49 +1,42 @@
-      <header>
-        <h1>Movie Streaming Landing Page</h1>
-        <p>Responsive Web Design | Movie Information | Real-time Fetching</p>
-    </header>
+ <h1>🎥 Movie Streaming Landing Page</h1>
 
-    <main>
-        <section>
-            <h2>Project Overview</h2>
-            <p>This project is a **responsive landing page** for a movie streaming service. It includes a **modern design**, a **carousel**, and **movie info fetching** capabilities. The page dynamically loads movie data and provides interactive features like sorting and filtering movies based on genres.</p>
-        </section>
+  <p>
+    A modern, fully responsive movie streaming landing page built with <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>. 
+    The design focuses on clean UI, smooth interactions, and a seamless user experience across all devices.
+  </p>
 
-        <section>
-            <h2>Features</h2>
-            <ul>
-                <li><strong>Responsive Design:</strong> The page adjusts beautifully across all screen sizes, from mobile to desktop.</li>
-                <li><strong>Interactive Carousel:</strong> A carousel displaying movies with clickable details.</li>
-                <li><strong>Real-time Movie Fetching:</strong> The app fetches real-time movie data from an API.</li>
-                <li><strong>Sorting & Filtering:</strong> Users can sort and filter movies by genres.</li>
-            </ul>
-        </section>
+  <h2>🚀 Features</h2>
+  <ul>
+    <li>Modern and responsive UI design</li>
+    <li>Interactive movie carousel using Swiper.js</li>
+    <li>Dynamic movie filtering based on selected genres</li>
+    <li>Movie details display on click</li>
+    <li>Fully mobile-friendly layout</li>
+  </ul>
 
-        <section>
-            <h2>Technologies Used</h2>
-            <ul>
-                <li><strong>HTML5</strong> for structure</li>
-                <li><strong>CSS3</strong> (including Tailwind CSS) for styling</li>
-                <li><strong>JavaScript</strong> for dynamic functionality</li>
-                <li><strong>Swiper.js</strong> for the carousel</li>
-                <li><strong>API Integration</strong> for movie data</li>
-            </ul>
-        </section>
+  <h2>🛠 Technologies Used</h2>
+  <ul>
+    <li>HTML5</li>
+    <li>CSS3 (Flexbox & Media Queries)</li>
+    <li>JavaScript (Vanilla)</li>
+    <li>Swiper.js (for carousel functionality)</li>
+  </ul>
 
-        <section>
-            <h2>How to Use</h2>
-            <p>To use this project, clone the repository and open the <code>index.html</code> file in your browser:</p>
-            <pre><code>git clone https://github.com/your-username/movie-streaming-landing-page.git
-cd movie-streaming-landing-page
-open index.html</code></pre>
-        </section>
+  
+  <
+ 
 
-        <section>
-            <h2>Preview</h2>
-            <p>For a live preview of the landing page, check the deployed version here: <a href="https://your-live-link.com" target="_blank">Live Demo</a>.</p>
-        </section>
+  
+  <ol>
+    <li>Clone the repository:
+      <br>
+      <code>git clone https://github.com/DeepAshishThapa/Movies-Streaming-Page.git</code>
+    </li>
+    <li>Navigate to the project folder and open <code>index.html</code> in your browser.</li>
+  </ol>
 
-        <section>
-            <h2>Contributing</h2>
-            <p>If you want to contribute to this project, feel free to fork the repository and create a pull request. Please ensure that your code follows the coding conventions used in the project.</p>
-        </section>
+  <h2>📌 Notes</h2>
+  <ul>
+    <li>No backend — this is a frontend landing page only.</li>
+    <li>Movies are loaded from a static JavaScript array for demonstration.</li>
+  </ul>
