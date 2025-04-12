@@ -63,7 +63,7 @@ li{
 
 
 .myswiperbutton{
-    background-color: rgba(101, 99, 99, 0.5);
+    background-color: rgba(255, 0, 0);
     color: white;
     border-radius: 100px;
     padding: 0 8px 0 8px;
@@ -90,7 +90,7 @@ li{
     color: #FFD43B;
 }
 .red{
-    background-color: red;
+    background-color: rgb(86, 82, 82,0.5);
 }
 .volume:hover{
     color: gray ;
@@ -104,21 +104,50 @@ li{
  .card{
     min-width: 160px;
     /* min-width: 11% */
+    height: 300px;
+    color: white;
+    
     
 
 
 }
 .card img{
     width: 100%;
-    height: 90%;
+    height: 70%;
     border-radius: 2px;
     object-fit: cover;
     cursor: pointer;
 }
- .card img:hover{
+ .card:hover{
     transform: scale(1.1);
 }
-/* .container::-webkit-scrollbar{
+::-webkit-scrollbar{
     display: none;
-} */
+}
 
+@media (min-width:2158px) {
+    .card{
+        width: 20%;
+    }
+    
+}
+.arrowbutton::before{
+    content: ' ';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: rgba(28, 27, 27, 0.5);
+    border-radius: 100%;
+    left: -5px;
+    top: -1px;
+    z-index: -1;
+    
+
+}
+.arrowbutton:hover::before{
+    background-color: rgb(167, 85, 85,.5);
+}
+.togglebox{
+    display: none;
+    
+}

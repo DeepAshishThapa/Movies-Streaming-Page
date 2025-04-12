@@ -95,34 +95,47 @@
 
   <div class="swiper mySwiper mt-3 ">
     <div class="swiper-wrapper">
-      <div class="swiper-slide"><button class="myswiperbutton">Action</button></div>
-      <div class="swiper-slide"><button class="myswiperbutton">Crime</button></div>
-      <div class="swiper-slide"><button class="myswiperbutton">Adventure</button></div>
+      <div class="swiper-slide"><button class="myswiperbutton" id="actionbtn">Action</button></div>
+      <div class="swiper-slide"><button class="myswiperbutton" id="crimebtn">Crime</button></div>
+      <div class="swiper-slide"><button class="myswiperbutton" id="adventurebtn">Adventure</button></div>
 
-      <div class="swiper-slide"><button class="myswiperbutton">Biography</button></div>
-      <div class="swiper-slide"><button class="myswiperbutton">Animation</button></div>
-      <div class="swiper-slide"><button class="myswiperbutton">Comedy</button></div>
-      <div class="swiper-slide"><button class="myswiperbutton">Documentary</button></div>
-      <div class="swiper-slide"><button class="myswiperbutton">Dramas</button></div>
-      <div class="swiper-slide"><button class="myswiperbutton">Webseries</button></div>
-      <div class="swiper-slide"><button class="myswiperbutton"> 18+</button></div>
-      <div class="swiper-slide"><button class="myswiperbutton">SciFi</button></div>
+      <div class="swiper-slide"><button class="myswiperbutton" id="biographybtn">Biography</button></div>
+      <div class="swiper-slide"><button class="myswiperbutton" id="animationbtn">Animation</button></div>
+      <div class="swiper-slide"><button class="myswiperbutton" id="comedybtn">Comedy</button></div>
+      <div class="swiper-slide"><button class="myswiperbutton" id="documentarybtn">Documentary</button></div>
+      <div class="swiper-slide"><button class="myswiperbutton" id="dramabtn">Dramas</button></div>
+      <div class="swiper-slide"><button class="myswiperbutton" id="webseriesbtn">Webseries</button></div>
+      <div class="swiper-slide"><button class="myswiperbutton" id="plusbtn"> 18+</button></div>
+      <div class="swiper-slide"><button class="myswiperbutton" id="scifibtn">SciFi</button></div>
 
-      <div class="swiper-slide"><button class="myswiperbutton">Horror</button></div>
+      <div class="swiper-slide"><button class="myswiperbutton" id="horrorbtn">Horror</button></div>
     </div>
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
   </div>
-  <div class=" pt-5 px-1 flex gap-5 overflow-auto relative w-[99vw] ">
-    <div class="absolute left-3 top-[40%] z-10 ">
-      <button class="text-white "><i class="fa-solid fa-angle-left text-3xl"></i></button>
+  <div class="pt-5 px-1 flex gap-5 overflow-auto  w-[99vw] " id="moviecarousal">
+    <div class="absolute left-10 top-[120%] sm:top-[110%] z-10 arrowbutton " id="leftarrow">
+      <button class="text-white cursor-pointer"><i class="fa-solid fa-angle-left text-l text-blue-500 "></i></button>
 
     </div>
-    <div class="absolute">
-      <button class="text-white "><i class="fa-solid fa-angle-right text-3xl"></i></button>
+    <div class="absolute top-[120%] sm:top-[110%] left-[93%] 2xl:left-[97%] z-10 arrowbutton " id="rightarrow">
+      <button class="text-white cursor-pointer"><i class="fa-solid fa-angle-right text-l text-blue-500"></i></button>
 
     </div>
-    <div class="card">
+    <div class="actionbox flex gap-2"></div>
+    <div class="crimebox flex gap-2"></div>
+    <div class="adventurebox flex gap-2"></div>
+    <div class="biographybox flex gap-2"></div>
+    <div class="animationbox flex gap-2"></div>
+    <div class="comedybox flex gap-2 "></div>
+    <div class="documentarybox flex gap-2"></div>
+    <div class="dramasbox flex gap-2"></div>
+    <div class="plusbox flex gap-2"></div>
+    <div class="scifibox flex gap-2"></div>
+    <div class="horrorbox flex gap-2"></div>
+
+  </div>
+  <!-- <div class="card">
       <img src="/movies/6under.jpg" alt="">
     </div>
     <div class="card">
@@ -158,6 +171,78 @@
     <div class="card">
       <img src="/movies/bfg.webp" alt="">
     </div>
+    <div class="card">
+      <img src="/movies/blade.jpg" alt="">
+    </div>
+    <div class="card">
+      <img src="/movies/bloodshoot.jpg" alt="">
+    </div>
+    <div class="card">
+      <img src="/movies/caption phillips.jpg" alt="">
+    </div>
+    <div class="card">
+      <img src="/movies/chalmeraputt3.webp" alt="">
+    </div>
+    <div class="card">
+      <img src="/movies/chehre.webp" alt="">
+    </div>
+    <div class="card">
+      <img src="/movies/chichore.jpg" alt="">
+    </div>
+    <div class="card">
+      <img src="/movies/color.jpg" alt="">
+    </div>
+    <div class="card">
+      <img src="/movies/comndo.jpg" alt="">
+    </div>
+    <div class="card">
+      <img src="/movies/coold blood.jpg" alt="">
+    </div>
+    <div class="card">
+      <img src="/movies/crawl.jpg" alt="">
+    </div>
+    <div class="card">
+      <img src="/movies/dabg.jpg" alt="">
+    </div>
+    <div class="card">
+      <img src="/movies/danger close.jpg" alt="">
+    </div>
+    <div class="card">
+      <img src="/movies/dark.jpg" alt="">
+    </div>
+    <div class="card">
+      <img src="/movies/deadtecties.webp" alt="">
+    </div>
+    <div class="card">
+      <img src="/movies/docter.jpg" alt="">
+    </div>
+    <div class="card">
+      <img src="/movies/dol.jpg" alt="">
+    </div>
+    <div class="card">
+      <img src="/movies/dragan  hert.jpg" alt="">
+    </div>
+    <div class="card">
+      <img src="/movies/drganso.jpg" alt="">
+    </div>
+    <div class="card">
+      <img src="/movies/driverr.jpg" alt="">
+    </div>
+    <div class="card">
+      <img src="/movies/egreji.jpg" alt="">
+    </div>
+    <div class="card">
+      <img src="/movies/extra.jpg" alt="">
+    </div>
+    <div class="card">
+      <img src="/movies/extraction.jpg" alt="">
+    </div>
+    <div class="card">
+      <img src="/movies/fukray.jpg" alt="">
+    </div>
+    <div class="card">
+      <img src="/movies/god.jpg" alt="">
+    </div> -->
 
   </div>
   <div class="vidbox w-[99vw] relative">
