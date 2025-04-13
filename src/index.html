@@ -246,7 +246,7 @@
 
   </div>
   <div class="vidbox w-[99vw] relative">
-    <video src="/src/john wick.webm " class="bg-black rounded-3xl w-[80%] m-auto border-2 border-amber-50 " id="video"
+    <video src="/src/john wick.webm " class="bg-black rounded-3xl w-[90%] m-auto border-2 border-amber-50 " id="video"
       controls muted>
 
 
@@ -265,9 +265,43 @@
   </div>
 
   </div>
+  <div class="mx-20">
+    <div class="text-gray-300 flex justify-around py-5 border-b-2 border-gray-700">
+      <span class="hover:text-white hover:cursor-pointer "><i class="fa-solid fa-film mr-1  "></i>Movies</span>
+      <span class="hover:text-white hover:cursor-pointer "><i class="fa-solid fa-ticket-simple"></i> Series</span>
+      <span class="hover:text-white hover:cursor-pointer "><i class="fa-solid fa-check mr-1.5 "></i>Original
+        Series</span>
+      <span class="hover:text-white hover:cursor-pointer">Trailer</span>
 
 
+    </div>
+    <div class="text-white flex justify-between pt-5 flex-col md:flex-row ">
+      <div class="flex gap-3 flex-col md:flex-row">
+        <span>Sort by:</span>
+        <button class="bg-red-500 rounded-2xl px-5 py-0.5 hover:cursor-pointer hover:bg-red-600">All</button>
+        <button class="bg-red-500 rounded-2xl px-5 py-0.5 hover:cursor-pointer hover:bg-red-600"> Latest</button>
+        <button class="bg-gray-700 rounded-2xl px-5 py-0.5 hover:cursor-pointer hover:bg-gray-800">Year</button>
+        <select class="bg-gray-700 rounded-2xl px-5 py-0.5 hover:cursor-pointer hover:bg-gray-800">
+          <option value="" selected disabled>A-Z<i class="fa-solid fa-angle-down"></i></option> 
+          <option value="">2022</option>
+          <option value="">2021</option>
+          <option value="">2020</option>
+          <option value="">2019</option>
+          <option value="">2018</option>
+          <option value="">2017</option>
+        </select>
+      </div>
+      <div class="flex items-center gap-1 ">
 
+        <i class="fa-solid fa-star text-amber-300 "></i>
+        <input id="myrange" type="range"  min="0" max="10" step="0.1" class="accent-yellow-500">
+        <label for="myrange">
+          <span id="valueofrange">5</span>
+       </label>
+      </div>
+    </div>
+  </div>
+  
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 

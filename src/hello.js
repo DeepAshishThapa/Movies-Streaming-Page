@@ -1313,4 +1313,11 @@ vid3.addEventListener('click', () => {
 })
 
 
+slider=document.querySelector('#myrange')
+valueofrange=document.querySelector('#valueofrange')
+
+slider.addEventListener('input',()=>{
+    valueofrange.textContent=slider.value
+})
+
 
