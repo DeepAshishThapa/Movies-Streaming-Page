@@ -1321,3 +1321,27 @@ slider.addEventListener('input',()=>{
 })
 
 
+allbox=document.querySelector('.allbox')
+movies.forEach((movie) => {
+    const { img, title, year, url, rate } = movie;
+    let card = document.createElement('div')
+    card.classList.add('card2');
+    card.innerHTML = `
+    <a href="${url}">
+                <img src="${img}" alt="${title}">
+                <h1>${title}</h1>
+                <div class="flex text-[13px] justify-between ">
+                   <div class="text-gray-600">${year}</div>
+                   <div class="flex gap-1 items-center ">
+                     <span class="text-gray-600"><i class="fa-solid fa-heart"></i></span>
+                     <span class="text-gray-600"><i class="fa-solid fa-eye"></i></span>
+                     <span class="text-amber-300"><i class="fa-solid fa-star"></i>${rate}</span>
+                    </div>
+                </div>
+
+                  
+                
+            </a>
+    `
+    allbox.appendChild(card);
+})

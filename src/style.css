@@ -121,6 +121,27 @@ li{
  .card:hover{
     transform: scale(1.1);
 }
+.card2{
+    /* min-width: 160px; */
+    /* min-width: 11% */
+    height: 350px;
+    color: white;
+    
+    
+
+
+}
+.card2 img{
+    width: 100%;
+    height: 70%;
+    border-radius: 2px;
+    object-fit: cover;
+    cursor: pointer;
+}
+ .card2:hover{
+    transform: scale(1.1);
+}
+
 ::-webkit-scrollbar{
     display: none;
 }
@@ -150,4 +171,8 @@ li{
 .togglebox{
     display: none;
     
+}
+.allbox{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
 }
