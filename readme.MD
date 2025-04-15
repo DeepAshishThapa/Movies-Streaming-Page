@@ -7,7 +7,7 @@
 
   <h2>🚀 Features</h2>
   <ul>
-    <li>Modern and responsive UI design</li>
+    <li>Modern and responsive UI design proper interface</li>
     <li>Interactive movie carousel using Swiper.js</li>
     <li>Dynamic movie filtering based on selected genres</li>
     <li>Movie details display on click</li>

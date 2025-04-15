@@ -1467,6 +1467,15 @@ year2020movies.forEach((year2020movie)=>{
 
 
 })
+letter_abox=document.querySelector('#letter_a')
+letter_amovies=movies.filter((movie)=>{
+    return movie.year=="2020"
+})
+
+
+
+
+
 
 
 
