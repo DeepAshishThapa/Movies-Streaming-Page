@@ -278,11 +278,23 @@
     <div class="text-white flex justify-between pt-5 flex-col md:flex-row ">
       <div class="flex gap-3 flex-col md:flex-row">
         <span>Sort by:</span>
-        <button class="bg-red-500 rounded-2xl px-5 py-0.5 hover:cursor-pointer hover:bg-red-600">All</button>
-        <button class="bg-red-500 rounded-2xl px-5 py-0.5 hover:cursor-pointer hover:bg-red-600"> Latest</button>
-        <button class="bg-gray-700 rounded-2xl px-5 py-0.5 hover:cursor-pointer hover:bg-gray-800">Year</button>
+        <button class="bg-red-500 rounded-2xl px-5 py-0.5 hover:cursor-pointer hover:bg-red-600 allbtn">All</button>
+        <button class="bg-red-500 rounded-2xl px-5 py-0.5 hover:cursor-pointer hover:bg-red-600 latestbtn"> Latest</button>
+        
         <select class="bg-gray-700 rounded-2xl px-5 py-0.5 hover:cursor-pointer hover:bg-gray-800">
-          <option value="" selected disabled>A-Z<i class="fa-solid fa-angle-down"></i></option> 
+          <option value="" selected disabled>A-Z<i class="fa-solid fa-angle-down"></i></option>
+          <option value="">A</option>
+          <option value="">B</option>
+          <option value="">C</option>
+          <option value="">E</option>
+          <option value="">F</option>
+          <option value="">G</option>
+          <option value="">H</option>
+          <option value="">T</option>
+          <option value="">Z</option>
+        </select>
+        <select class="bg-gray-700 rounded-2xl px-5 py-0.5 hover:cursor-pointer hover:bg-gray-800">
+          <option value="" selected disabled>Year<i class="fa-solid fa-angle-down"></i></option>
           <option value="">2022</option>
           <option value="">2021</option>
           <option value="">2020</option>
@@ -294,17 +306,25 @@
       <div class="flex items-center gap-1 ">
 
         <i class="fa-solid fa-star text-amber-300 "></i>
-        <input id="myrange" type="range"  min="0" max="10" step="0.1" class="accent-yellow-500">
+        <input id="myrange" type="range" min="0" max="10" step="0.1" class="accent-yellow-500">
         <label for="myrange">
           <span id="valueofrange">5</span>
-       </label>
+        </label>
       </div>
     </div>
-    <div class="mt-5 allbox">
+    <div class="allbox mt-5 border-1 border-white "></div>
+    <div class="latestbox border-1 border-white"></div>
+    <div class="year border-1 border-white" id="year_2022"></div>
+    <div class="year border-1 border-white" id="year_2021"></div>
+    <div class="year border-1 border-white" id="year_2020"></div>
+    <div class="letter border-1 border-white" id="letter_a"></div>
+    <div class="letter border-1 border-white" id="letter_b"></div>
+    <div class="letter border-1 border-white" id="letter_t"></div>
+    <div class="rate_change border-1 border-white" id="rate4"></div>
+    <div class="rate_change border-1 border-white" id="rate8"></div>
 
-    </div>
   </div>
-  
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 

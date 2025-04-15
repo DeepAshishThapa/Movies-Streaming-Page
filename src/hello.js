@@ -192,7 +192,7 @@ const movies = [{
     genre9: "18+",
     genre10: "scifi",
     genre11: "horor",
-    year: 2020,
+    year: 2022,
     rate: 9.3,
     url: "themanor.html",
     tppr: "trend",
@@ -280,7 +280,7 @@ const movies = [{
     genre9: "18+",
     genre10: "scifi",
     genre11: "horor",
-    year: 2021,
+    year: 2022,
     rate: 7.9,
     url: "themanor.html",
     tppr: "trend",
@@ -302,7 +302,7 @@ const movies = [{
     genre9: "18+",
     genre10: "scifi",
     genre11: "horor",
-    year: 2020,
+    year: 2022,
     rate: 8.9,
     url: "themanor.html",
     tppr: "trend",
@@ -324,7 +324,7 @@ const movies = [{
     genre9: "18+",
     genre10: "scifi",
     genre11: "horor",
-    year: 2020,
+    year: 2022,
     rate: 8.8,
     url: "themanor.html",
     tppr: "trend",
@@ -368,7 +368,7 @@ const movies = [{
     genre9: "18+",
     genre10: "scifi",
     genre11: "horor",
-    year: 2020,
+    year: 2022,
     rate: 9.7,
     url: "themanor.html",
     tppr: "trend",
@@ -412,7 +412,7 @@ const movies = [{
     genre9: "18+",
     genre10: "scifi",
     genre11: "horor",
-    year: 2021,
+    year: 2022,
     rate: 8.8,
     url: "themanor.html",
     tppr: "trend",
@@ -1345,3 +1345,143 @@ movies.forEach((movie) => {
     `
     allbox.appendChild(card);
 })
+
+latestmovies=movies.filter((movie)=>{
+    return movie.upload=='latest'
+
+})
+latestbox=document.querySelector('.latestbox')
+latestmovies.forEach(latestmovie=>{
+    const { img, title, year, url, rate } = latestmovie;
+    let card = document.createElement('div')
+    card.classList.add('card2');
+    card.innerHTML = `
+    <a href="${url}">
+                <img src="${img}" alt="${title}">
+                <h1>${title}</h1>
+                <div class="flex text-[13px] justify-between ">
+                   <div class="text-gray-600">${year}</div>
+                   <div class="flex gap-1 items-center ">
+                     <span class="text-gray-600"><i class="fa-solid fa-heart"></i></span>
+                     <span class="text-gray-600"><i class="fa-solid fa-eye"></i></span>
+                     <span class="text-amber-300"><i class="fa-solid fa-star"></i>${rate}</span>
+                    </div>
+                </div>
+
+                  
+                
+            </a>
+    `
+    latestbox.appendChild(card);
+
+
+
+})
+year2022box=document.querySelector('#year_2022')
+year2022movies=movies.filter((movie)=>{
+    return movie.year=="2022"
+})
+year2022movies.forEach((year2022movie)=>{
+    const { img, title, year, url, rate } = year2022movie;
+    let card = document.createElement('div')
+    card.classList.add('card2');
+    card.innerHTML = `
+    <a href="${url}">
+                <img src="${img}" alt="${title}">
+                <h1>${title}</h1>
+                <div class="flex text-[13px] justify-between ">
+                   <div class="text-gray-600">${year}</div>
+                   <div class="flex gap-1 items-center ">
+                     <span class="text-gray-600"><i class="fa-solid fa-heart"></i></span>
+                     <span class="text-gray-600"><i class="fa-solid fa-eye"></i></span>
+                     <span class="text-amber-300"><i class="fa-solid fa-star"></i>${rate}</span>
+                    </div>
+                </div>
+
+                  
+                
+            </a>
+    `
+    year2022box.appendChild(card);
+
+
+
+})
+year2021box=document.querySelector('#year_2021')
+year2021movies=movies.filter((movie)=>{
+    return movie.year=="2021"
+})
+year2021movies.forEach((year2021movie)=>{
+    const { img, title, year, url, rate } = year2021movie;
+    let card = document.createElement('div')
+    card.classList.add('card2');
+    card.innerHTML = `
+    <a href="${url}">
+                <img src="${img}" alt="${title}">
+                <h1>${title}</h1>
+                <div class="flex text-[13px] justify-between ">
+                   <div class="text-gray-600">${year}</div>
+                   <div class="flex gap-1 items-center ">
+                     <span class="text-gray-600"><i class="fa-solid fa-heart"></i></span>
+                     <span class="text-gray-600"><i class="fa-solid fa-eye"></i></span>
+                     <span class="text-amber-300"><i class="fa-solid fa-star"></i>${rate}</span>
+                    </div>
+                </div>
+
+                  
+                
+            </a>
+    `
+    year2021box.appendChild(card);
+
+
+
+})
+year2020box=document.querySelector('#year_2020')
+year2020movies=movies.filter((movie)=>{
+    return movie.year=="2020"
+})
+year2020movies.forEach((year2020movie)=>{
+    const { img, title, year, url, rate } = year2020movie;
+    let card = document.createElement('div')
+    card.classList.add('card2');
+    card.innerHTML = `
+    <a href="${url}">
+                <img src="${img}" alt="${title}">
+                <h1>${title}</h1>
+                <div class="flex text-[13px] justify-between ">
+                   <div class="text-gray-600">${year}</div>
+                   <div class="flex gap-1 items-center ">
+                     <span class="text-gray-600"><i class="fa-solid fa-heart"></i></span>
+                     <span class="text-gray-600"><i class="fa-solid fa-eye"></i></span>
+                     <span class="text-amber-300"><i class="fa-solid fa-star"></i>${rate}</span>
+                    </div>
+                </div>
+
+                  
+                
+            </a>
+    `
+    year2020box.appendChild(card);
+
+
+
+})
+
+
+
+
+
+
+allbtn=document.querySelector('.allbtn')
+allbtn.addEventListener('click',()=>{
+    allbtn.classList.toggle('red')
+    allbox.classList.toggle('togglebox')
+})
+latestbtn=document.querySelector('.latestbtn')
+latestbtn.addEventListener('click',()=>{
+    latestbtn.classList.toggle('red')
+    latestbox.classList.toggle('togglebox')
+    console.log(latestbtn)
+})
+

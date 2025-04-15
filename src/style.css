@@ -124,7 +124,7 @@ li{
 .card2{
     /* min-width: 160px; */
     /* min-width: 11% */
-    height: 350px;
+    height: 380px;
     color: white;
     
     
@@ -168,11 +168,21 @@ li{
 .arrowbutton:hover::before{
     background-color: rgb(167, 85, 85,.5);
 }
+
+.allbox{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+}
+.latestbox{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+}
+.year{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+}
+
 .togglebox{
     display: none;
     
-}
-.allbox{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
 }

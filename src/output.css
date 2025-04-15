@@ -402,6 +402,9 @@
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
+  .mr-0 {
+    margin-right: calc(var(--spacing) * 0);
+  }
   .mr-0\.5 {
     margin-right: calc(var(--spacing) * 0.5);
   }
@@ -513,6 +516,9 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
+  .h-0 {
+    height: calc(var(--spacing) * 0);
+  }
   .h-0\.5 {
     height: calc(var(--spacing) * 0.5);
   }
@@ -545,6 +551,9 @@
   }
   .min-h-screen {
     min-height: 100vh;
+  }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
@@ -1138,6 +1147,10 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-1 {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
@@ -1214,6 +1227,9 @@
   }
   .border-gray-700 {
     border-color: var(--color-gray-700);
+  }
+  .border-white {
+    border-color: var(--color-white);
   }
   .bg-\(--my_variable\) {
     background-color: var(--my_variable);
@@ -1432,8 +1448,14 @@
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
+  .py-0 {
+    padding-block: calc(var(--spacing) * 0);
+  }
   .py-0\.5 {
     padding-block: calc(var(--spacing) * 0.5);
+  }
+  .py-1 {
+    padding-block: calc(var(--spacing) * 1);
   }
   .py-1\.5 {
     padding-block: calc(var(--spacing) * 1.5);
