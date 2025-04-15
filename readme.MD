@@ -38,5 +38,5 @@
   <h2>📌 Notes</h2>
   <ul>
     <li>No backend — this is a frontend landing page only.</li>
-    <li>Movies are loaded from a static JavaScript array for demonstration.</li>
+    <li>Movies are loaded from a static JavaScript array for demonstration...</li>
   </ul>
