@@ -1469,9 +1469,64 @@ year2020movies.forEach((year2020movie)=>{
 })
 letter_abox=document.querySelector('#letter_a')
 letter_amovies=movies.filter((movie)=>{
-    return movie.year=="2020"
+    return movie.letter=="a"
 })
+letter_amovies.forEach((letter_amovie)=>{
+    const { img, title, year, url, rate } = letter_amovie;
+    let card = document.createElement('div')
+    card.classList.add('card2');
+    card.innerHTML = `
+    <a href="${url}">
+                <img src="${img}" alt="${title}">
+                <h1>${title}</h1>
+                <div class="flex text-[13px] justify-between ">
+                   <div class="text-gray-600">${year}</div>
+                   <div class="flex gap-1 items-center ">
+                     <span class="text-gray-600"><i class="fa-solid fa-heart"></i></span>
+                     <span class="text-gray-600"><i class="fa-solid fa-eye"></i></span>
+                     <span class="text-amber-300"><i class="fa-solid fa-star"></i>${rate}</span>
+                    </div>
+                </div>
 
+                  
+                
+            </a>
+    `
+    letter_abox.appendChild(card);
+
+
+
+})
+letter_bbox=document.querySelector('#letter_b')
+letter_bmovies=movies.filter((movie)=>{
+    return movie.letter=="b"
+})
+letter_bmovies.forEach((letter_bmovie)=>{
+    const { img, title, year, url, rate } = letter_bmovie;
+    let card = document.createElement('div')
+    card.classList.add('card2');
+    card.innerHTML = `
+    <a href="${url}">
+                <img src="${img}" alt="${title}">
+                <h1>${title}</h1>
+                <div class="flex text-[13px] justify-between ">
+                   <div class="text-gray-600">${year}</div>
+                   <div class="flex gap-1 items-center ">
+                     <span class="text-gray-600"><i class="fa-solid fa-heart"></i></span>
+                     <span class="text-gray-600"><i class="fa-solid fa-eye"></i></span>
+                     <span class="text-amber-300"><i class="fa-solid fa-star"></i>${rate}</span>
+                    </div>
+                </div>
+
+                  
+                
+            </a>
+    `
+    letter_bbox.appendChild(card);
+
+
+
+})
 
 
 
@@ -1493,4 +1548,39 @@ latestbtn.addEventListener('click',()=>{
     latestbox.classList.toggle('togglebox')
     console.log(latestbtn)
 })
+
+const yearSelect = document.getElementById('yearSelect');
+
+yearSelect.addEventListener('change', function () {
+  const selectedYear = this.value;
+
+
+  if (selectedYear === '2022') {
+    year2022box.classList.toggle('grid')
+  }
+  if (selectedYear === '2021') {
+    year2021box.classList.toggle('grid')
+  }
+  if (selectedYear === '2020') {
+    year2020box.classList.toggle('grid')
+  }
+  
+
+});
+const letterSelect = document.getElementById('letterSelect');
+
+letterSelect.addEventListener('change', function () {
+  const selectedletter = this.value;
+
+
+  if (selectedletter === 'a') {
+    letter_abox.classList.toggle('grid')
+    
+  }
+ else if (selectedletter === 'b') {
+    letter_bbox.classList.toggle('grid')
+  }
+
+
+});
 
