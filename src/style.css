@@ -196,3 +196,43 @@ li{
     display: none;
     
 }
+.down_page{
+    width: 90%;
+    height: auto;
+    margin: 30px auto;
+    /* border: 1px solid white; */
+    display: flex;
+    gap: 40px;
+}
+.down_page .imgbox, .contbox{
+    width: 48%;
+    height: 380px;
+   
+
+}
+.imgbox img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+
+}
+
+@media (max-width:700px) {
+    .down_page{
+        width: 90%;
+        height: auto;
+        margin: 30px auto;
+        /* border: 1px solid white; */
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .down_page .imgbox, .contbox{
+        width: 90%;
+        height: auto;
+        margin: auto;
+       
+    
+    }
+    
+}
